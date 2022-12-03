@@ -1,0 +1,6 @@
+[flake8]
+exclude =
+    venv,
+    .tox,
+    config/settings.py,
+    manage.py
