@@ -19,7 +19,7 @@ def log_in(request):
             return redirect('user_list')
         else:
             print(form.errors)
-    
+
     return render(request, 'example/log_in.html', {'form': form})
 
 
@@ -32,7 +32,7 @@ def sign_up(request):
             return redirect(reverse_lazy('log_in'))
         else:
             print(form.errors)
-    
+
     return render(request, 'example/sign_up.html', {'form': form})
 
 
